@@ -35,6 +35,7 @@
   {{- end}}
 
   <link rel="stylesheet"
+        crossorigin="anonymous"
         href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
 
   <link rel="stylesheet"
@@ -61,14 +62,6 @@
   </main>
 
   {{ partial "footer.html" . }}
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
-          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
-          crossorigin="anonymous"></script>
-
-
-  <script src="{{ `js/jquery.min.js` | relURL }}"></script>
-  <script src="{{ `js/soho.js` | relURL }}"></script>
 
   {{ range $.Site.Params.customJs -}}
   <script src="{{ . | relURL }}"></script>
